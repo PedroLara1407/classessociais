@@ -1,0 +1,194 @@
+body{
+    font-family: monospace; 
+    margin: 0%; 
+    padding: 0%; 
+    background-color: #ffebcd;
+}  
+
+header{ 
+    top: 0; 
+    width: 100%;
+    position: fixed; 
+    background-color: #9c723260; 
+    text-shadow: -1px -1px 5px #86868673;
+} 
+
+main{
+    margin-top: 13%; 
+} 
+
+
+h1{
+    font-size: 3.5em;
+    text-align: center; 
+    color: #a58350;
+} 
+
+h1::before{
+    content: "Estudo e opnião sobre: "; 
+    color: #000000;
+}  
+
+
+nav ul{
+    list-style-type: none; 
+    padding:0%;  
+    margin: 0;
+    margin-bottom: 2%; 
+    display: flex; 
+    justify-content: space-around;
+} 
+
+nav ul li{
+    margin: 0 20px;
+} 
+
+nav ul li a{  
+    text-decoration: none; 
+    color: #000000; 
+    padding: 10px;  
+    background-color: #c09555;
+    border-radius: 30px; 
+    box-shadow: -1px -1px 5px #3a3a3a73;
+} 
+
+nav ul li a:hover{
+    background-color: #795e37; 
+    /* passar pra cima depois pra ficar bonito */ 
+    transition: 1.3s; 
+    padding: 15px;
+} 
+
+nav ul li a:active{
+    background-color: #e7b569;
+} 
+
+nav ul li a:visited{
+    background-color: #b46125;
+} 
+
+#alta{  
+    padding: 1%; 
+    padding-top: 12%; 
+    margin-top: -10%; 
+    margin-left: 1%; 
+    font-size: 40px; 
+}  
+
+
+#media{  
+    padding: 1%; 
+    padding-top: 15%; 
+    margin-top: -10%; 
+    margin-left: 1%; 
+    font-size: 40px;
+}  
+
+#baixa{  
+    padding: 1%; 
+    padding-top: 15%; 
+    margin-top: -10%; 
+    margin-left: 1%; 
+    font-size: 40px;
+}   
+
+/* TEXTTO MAIN */
+
+.card{  
+    height: 50vh;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+    padding-left: 2%;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+    margin-left:10%; 
+    margin-right:10%; 
+    display: flex;   
+    font-size: 20px; 
+    box-shadow: 1px 1px 5px; 
+} 
+
+.card img{
+    border-radius:20%;   
+    margin-left: 5%; 
+    margin-right: 5%;
+}  
+
+img{ 
+    height: 380px; 
+    width: 500px;
+}
+
+/* SEÇÃO PARALAXE */
+
+.alta-paralaxe{
+    background-image: url(https://toppng.com/uploads/preview/fancy-backgrounds-textures-11554018543tn1mv47ag4.jpg);
+} 
+
+.media-paralaxe{
+    background-image: url(https://img.freepik.com/free-photo/black-painted-wall-textured-background_53876-110728.jpg?t=st=1729878834~exp=1729882434~hmac=288484adc8576f2bb8a621ca71bceb228a1b2e5da3a9abaf2d9765d1191c0476&w=900);
+} 
+
+.baixa-paralaxe{
+    background-image: url(https://img.freepik.com/free-photo/black-brick-wall_53876-88675.jpg?t=st=1729878947~exp=1729882547~hmac=d24941ae422d763fc2d78a14a6e1cd5be7262c675a5291e139e85ad827d46f8f&w=900);
+}
+
+.parallax{
+    height: 60vh; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+/* SEÇÃO PARALAXE */
+
+p::first-letter{
+    color: #d2691e; 
+    font-weight: 900; 
+    font-size: 2em; 
+} 
+
+p::selection{
+    background-color: #d2691e;  
+    color: #f3c683;  
+}  
+
+#footer{
+    text-align: center; 
+    font-size: 15px; 
+    background-color: #f3a268;  
+    margin-top: 0;
+    padding-top: 0;
+    height: 50px;
+} 
+
+@media (max-width:480px){
+    header{
+        font-size: 10px; 
+        padding-bottom: 5px;
+        text-shadow: 1px 1px 5px black;
+    } 
+
+    #alta{
+        margin-top: 40%; 
+        padding-top: 30%;
+    }
+
+    .card{
+        margin-top: 10%;
+        margin-left: 2%; 
+        margin-right: 2%;
+        padding-bottom: 100%; 
+        margin-bottom: 40%;
+        font-size: 20px;
+        display: block;
+    } 
+
+    .card img{
+        margin-left: 2%;
+        height: 400px; 
+        width: 350px; 
+       object-fit: cover;
+    }
+}
